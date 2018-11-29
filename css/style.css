@@ -5,9 +5,6 @@ html, body{
 /* --------------TASKURI-------------------- */
 /*-------------------- 1 -------------------- */
 
-.celula:hover{
-    background-color:rgb(104, 82, 165) !important;
-}
 
 /* --------------------2--------------------- */
 
@@ -115,7 +112,13 @@ html, body{
  .linie:nth-child(3n)
  .celula:nth-child(3n+2) {
     background-color:pink !important;
+    opacity:0.5;
  }
+
+ .celula:hover{
+    background-color:rgb(104, 82, 165) !important;
+}
+
 
  /* celula penultima mare  */
 
@@ -171,6 +174,7 @@ html, body{
     margin-left:auto;
     margin-right:auto;
 }
+
 .imagine img{
     height: 150px;
     width:auto;
@@ -181,16 +185,20 @@ html, body{
 
 .reguli{
     text-align:center;
+    width:80%;
+    margin-left:auto;
+    margin-right:auto;
 }
 
 .scop img{
     margin-right:50px;
 }
 
-
 .metoda{
     float: left;
     width: 33.33%;
+    height:400px;
+    overflow:scroll;
 }
 
 /* Clear floats after the columns */
