@@ -25,6 +25,13 @@ html, body{
 /* --------------------5--------------------- */
 
 
+/* --------------------6---------------------- */
+
+.celula:hover{
+    cursor:grab;
+}
+
+
 
 
 
@@ -103,7 +110,6 @@ html, body{
 {
     background-color: #f44;
 }
-
 /* celule penultime mici */
 
  .linie:nth-child(3n)
@@ -119,9 +125,81 @@ html, body{
     background-color:yellow;   
 }
 
+/* ----------------MENIU------------------- */
+
+.meniu{
+    background-color:#ffeeee;
+    width: 100%;
+    height: 100%;
+}
+
+.optiuni{
+    width:300px;
+    margin-left:auto;
+    margin-right:auto;
+}
+
+.optiuni a{
+    display:block;
+    text-decoration:none;
+    text-align:center;
+    cursor:grab;
+    font-size:15px;
+    border:2px solid #ffbbbb;
+    color:#400;
+    border-radius:50px;
+}
+
+.optiuni a:hover{
+    background-color:#600;
+    color:#fff;
+    font-size:25px;
+    transition:background-color 0.2s;
+}
+
+.titlu h1{
+    color:#600;
+    font-weight: bold;
+    text-align:center;
+    font-size:50px;  
+}
+
+.imagine{
+    background-color:red;
+    width:300px;
+    height:300px;
+    margin-left:auto;
+    margin-right:auto;
+}
+.imagine img{
+    height: 150px;
+    width:auto;
+}
 
 /* -----------------REGULI---------------- */
-/* 
+
+
+.reguli{
+    text-align:center;
+}
+
+.scop img{
+    margin-right:50px;
+}
+
+
+.metoda{
+    float: left;
+    width: 33.33%;
+}
+
+/* Clear floats after the columns */
+.rezolvare:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+/*
 .reguli{
     height:100%;
     width:100%;
