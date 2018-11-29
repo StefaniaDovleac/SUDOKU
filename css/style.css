@@ -1,0 +1,132 @@
+html, body{
+    box-sizing: border-box;
+}
+
+/* --------------TASKURI-------------------- */
+/*-------------------- 1 -------------------- */
+
+.celula:hover{
+    background-color:rgb(104, 82, 165) !important;
+}
+
+/* --------------------2--------------------- */
+
+.celula{
+    font-weight: bold;
+    color:grey;  
+}    
+
+/* --------------------3/4-------------------- */
+
+.celula:nth-child(n):not(:nth-child(1)){
+    text-transform: uppercase;
+}
+
+/* --------------------5--------------------- */
+
+
+
+
+
+/* -----------SUDOKU------------------ */
+
+.sudoku{
+    display:block;   
+    position: absolute;
+    width: 270px;
+    height:270px;   
+    text-align:center;  
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);  
+    background-color:transparent;
+}
+
+.linie{
+    display:block; 
+    float:left;
+    background-color:transparent;
+    width:270px;
+    height:30px;     
+}
+
+.celula{
+    display:block; 
+    float:left;
+    background-color:transparent;
+    width:30px;
+    height:30px;
+    border:1px solid black;
+    margin:-1px;    
+}
+
+.linie :nth-child(3n+0){
+    border-right:3px solid black;
+    border-bottom: 3px solid black;
+    margin-right:-3px;      
+}
+
+/* celulele mici din mijloc */
+
+.linie:nth-child(3n+2)
+.celula:nth-child(3n+2) {
+   font-size:25px;
+   font-weight: bold;
+}
+
+/* celula mare din mijloc */
+
+.linie:nth-child(n):not(:nth-child(1)):not(:nth-child(2)):not(:nth-child(3)):not(:nth-child(7)):not(:nth-child(8)):not(:nth-child(9))
+.celula:nth-child(n):not(:nth-child(1)):not(:nth-child(2)):not(:nth-child(3)):not(:nth-child(7)):not(:nth-child(8)):not(:nth-child(9))
+{
+   font-size:25px;
+   font-weight: bold;
+}
+
+/* celule mici impare */
+
+.celula:nth-child(odd){
+    background-color:#600;
+} 
+
+/* celulele mari impare */
+
+.linie:nth-child(n):not(:nth-child(4)):not(:nth-child(5)):not(:nth-child(6))
+ .celula:nth-child(n):not(:nth-child(4)):not(:nth-child(5)):not(:nth-child(6))  
+{
+    background-color: #f44;
+    
+}
+
+ .linie:nth-child(n):not(:nth-child(1)):not(:nth-child(2)):not(:nth-child(3)):not(:nth-child(7)):not(:nth-child(8)):not(:nth-child(9))
+ .celula:nth-child(n):not(:nth-child(1)):not(:nth-child(2)):not(:nth-child(3)):not(:nth-child(7)):not(:nth-child(8)):not(:nth-child(9))
+{
+    background-color: #f44;
+}
+
+/* celule penultime mici */
+
+ .linie:nth-child(3n)
+ .celula:nth-child(3n+2) {
+    background-color:pink !important;
+ }
+
+ /* celula penultima mare  */
+
+.linie:nth-child(n+7):nth-child(-n+9)
+.celula:nth-child(n+4):nth-child(-n+6)
+{
+    background-color:yellow;   
+}
+
+
+/* -----------------REGULI---------------- */
+/* 
+.reguli{
+    height:100%;
+    width:100%;
+    background-color:red;
+    background-image:url("Sudoku.jpg");
+    background-repeat:no-repeat; 
+    background-size: cover;
+} */
